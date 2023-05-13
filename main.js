@@ -7,7 +7,13 @@ function fetchRecipes(query) {
 
   function displayRecipe(recipe) {
     const resultsDiv = document.getElementById('results');
+   
     const recipeDiv = document.createElement('div');
     recipeDiv.className = 'recipe';
+    
     const title = document.createElement('h2');
-    title.textContent = recipe.label}
+    title.textContent = recipe.label;
+
+    const image = document.createElement('img');
+    image.src = recipe.image}
+
