@@ -25,4 +25,5 @@ function fetchRecipes(query) {
     });
 
     recipeDiv.append(title, image, ingredientsList);
-   
+    resultsDiv.appendChild(recipeDiv);
+}
