@@ -63,3 +63,9 @@ h1 {
     height: 200px;
     object-fit: cover;
 }
+
+.recipe ul {
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+}
