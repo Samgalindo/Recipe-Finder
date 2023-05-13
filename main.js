@@ -41,3 +41,7 @@ document.getElementById('search-form').addEventListener('submit', function(event
     const recipes = data.hits;  // 'hits' is the array in the API data
     recipes.forEach(hit => displayRecipe(hit.recipe));
   }
+
+  document.getElementById('clear-button').addEventListener('click', function() {
+    document.getElementById('results').innerHTML = '';
+  });
