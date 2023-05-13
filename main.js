@@ -6,4 +6,6 @@ function fetchRecipes(query) {
   }
 
   function displayRecipe(recipe) {
-    const resultsDiv = document.getElementById('results')}
+    const resultsDiv = document.getElementById('results');
+    const recipeDiv = document.createElement('div');
+    recipeDiv.className = 'recipe'}
