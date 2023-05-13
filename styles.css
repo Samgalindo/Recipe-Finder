@@ -34,3 +34,10 @@ h1 {
     color: white;
     cursor: pointer;
 }
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
