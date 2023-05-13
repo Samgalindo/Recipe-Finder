@@ -27,3 +27,12 @@ function fetchRecipes(query) {
     recipeDiv.append(title, image, ingredientsList);
     resultsDiv.appendChild(recipeDiv);
 }
+
+
+document.getElementById('search-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const query = document.getElementById('search-input').value;
+    fetchRecipes(query)
+      .then(data => displayRecipes(data))
+      .catch(error => console.error('Error:', error));
+  });
