@@ -4,3 +4,6 @@ function fetchRecipes(query) {
       .then(response => response.json())
       .catch(error => console.error('Error:', error));
   }
+
+  function displayRecipe(recipe) {
+    const resultsDiv = document.getElementById('results')}
