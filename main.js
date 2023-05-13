@@ -36,3 +36,8 @@ document.getElementById('search-form').addEventListener('submit', function(event
       .then(data => displayRecipes(data))
       .catch(error => console.error('Error:', error));
   });
+
+  function displayRecipes(data) {
+    const recipes = data.hits;  // 'hits' is the array in the API data
+    recipes.forEach(hit => displayRecipe(hit.recipe));
+  }
