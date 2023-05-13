@@ -15,5 +15,13 @@ function fetchRecipes(query) {
     title.textContent = recipe.label;
 
     const image = document.createElement('img');
-    image.src = recipe.image}
+    image.src = recipe.image
 
+    const ingredientsList = document.createElement('ul');
+    recipe.ingredientLines.forEach(ingredient => {
+      const ingredientItem = document.createElement('li');
+      ingredientItem.textContent = ingredient;
+      ingredientsList.appendChild(ingredientItem);
+    });
+
+    
