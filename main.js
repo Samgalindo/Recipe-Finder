@@ -24,4 +24,5 @@ function fetchRecipes(query) {
       ingredientsList.appendChild(ingredientItem);
     });
 
-    
+    recipeDiv.append(title, image, ingredientsList);
+   
