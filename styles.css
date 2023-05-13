@@ -9,3 +9,9 @@ h1 {
     text-align: center;
     padding: 20px;
 }
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
